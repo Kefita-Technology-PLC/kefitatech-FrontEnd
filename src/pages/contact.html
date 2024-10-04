@@ -9,15 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/contact.css" />
@@ -26,24 +19,18 @@
   <body>
     <header>
       <div class="logo">
-        <img src="../../public/favicon.png" alt="" />
+        <img src="../../public/favicon.png" alt="Kefita Technology Logo" />
         <h6>Kefita Technology P.L.C</h6>
       </div>
-      <ul class="navlist">
-        <li>
-          <a href="../../index.html">Home</a>
-        </li>
-        <li>
-          <a href="./service.html">Services</a>
-        </li>
-        <li>
-          <a href="./about.html">About</a>
-        </li>
-
-        <li><a href="./Blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-      </ul>
-
+      <nav>
+        <ul class="navlist">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./Blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
@@ -51,44 +38,20 @@
       <div class="contact-us-top">
         <div class="left-form">
           <h1>Contact Us</h1>
-          <form
-            id="contactForm"
-            method="POST"
-            action="http://localhost:5500/api/contact"
-          >
+          <form id="contactForm">
             <div class="name element">
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
+              <input type="text" name="name" placeholder="Enter your name" required />
             </div>
             <div class="email element">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
+              <input type="email" name="email" placeholder="Enter your email" required />
             </div>
             <div class="subject element">
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
+              <input type="text" name="subject" placeholder="Subject" required />
             </div>
             <div class="note element">
-              <textarea
-                name="message"
-                id="note"
-                required
-                placeholder="Message"
-              ></textarea>
+              <textarea name="message" id="note" required placeholder="Message"></textarea>
             </div>
-            <div id class="submit element">
+            <div class="submit element">
               <input type="submit" id="submit" value="Send Message" />
             </div>
             <div id="lds-roller" class="lds-roller">
@@ -112,8 +75,7 @@
       <div class="contact-us-map">
         <h1>Find Us on Google Maps</h1>
         <p>
-          We are committed to delivering innovative and high-quality solutions
-          that drive business success.
+          We are committed to delivering innovative and high-quality solutions that drive business success.
         </p>
         <div class="map">
           <iframe
@@ -123,6 +85,7 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            title="Google Maps Location"
           ></iframe>
         </div>
       </div>
@@ -134,20 +97,13 @@
           <h2>Contact Us</h2>
           <ul>
             <li>
-              <a href="tel:+251912345678"
-                ><i class="fa fa-phone"></i> +251 91 234 5678</a
-              >
+              <a href="tel:+251912345678"><i class="fa fa-phone"></i> +251 91 234 5678</a>
             </li>
             <li>
-              <a href="#"
-                ><i class="fa fa-map-marker"></i> Addis Ababa, Akaki Kality,
-                Cabey Building, 3rd Floor, Room 304</a
-              >
+              <a href="#"><i class="fa fa-map-marker"></i> Addis Ababa, Akaki Kality, Cabey Building, 3rd Floor, Room 304</a>
             </li>
             <li>
-              <a href="mailto:kefitatech@gmail.com"
-                ><i class="fa fa-envelope"></i> kefitatech@gmail.com</a
-              >
+              <a href="mailto:kefitatech@gmail.com"><i class="fa fa-envelope"></i> kefitatech@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -163,24 +119,12 @@
         <div class="ftr-items social-media">
           <h2>Follow Us</h2>
           <ul class="ftr-list">
-            <li>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-telegram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-github"></i></a>
-            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
           </ul>
         </div>
       </section>
