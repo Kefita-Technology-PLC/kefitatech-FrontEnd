@@ -322,7 +322,7 @@
   border-radius: 5px; /* Rounded corners */
   margin-top: 10px; /* Space above the message */
   width: fit-content; /* Adjust width to fit content */
-  min-width: 200px; /* Minimum width */
+  min-width: 300px; /* Minimum width */
   height: auto; /* Automatic height based on content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }

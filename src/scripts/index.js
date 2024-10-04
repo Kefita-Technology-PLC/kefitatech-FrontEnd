@@ -24,15 +24,17 @@ document
       );
 
       if (response.ok) {
-        messageDiv.textContent = "Subscription successful!";
+        messageDiv.textContent =
+          "<h2> Subscription Successful, Thank you for choosing us</h2>";
         messageDiv.style.color = "#28a745"; // Success message color
       } else {
         const errorText = await response.text();
         const errorMessage = JSON.parse(errorText).message;
 
         // Check for duplicate email error
-        if (errorMessage.includes("duplicate key error")) {
-          messageDiv.textContent = "This email is already subscribed.";
+        if (error.code === 11000) {
+          messageDiv.textContent =
+            "<h1> This email is already subscribed. </h1>";
         } else {
           messageDiv.textContent = `Error: ${errorMessage}`;
         }
