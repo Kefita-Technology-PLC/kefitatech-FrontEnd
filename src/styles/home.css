@@ -294,3 +294,23 @@
     margin-right: 50px;
   }
 }
+
+.spinner {
+  display: inline-block;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  border: 3px solid rgba(0, 0, 0, 0.3); /* Light border */
+  border-radius: 50%; /* Circular shape */
+  border-top: 3px solid #3498db; /* Main spinner color */
+  animation: spin 0.8s linear infinite; /* Spin animation */
+  margin-left: 5px; /* Space between text and spinner */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Initial state */
+  }
+  100% {
+    transform: rotate(360deg); /* Final state */
+  }
+}
