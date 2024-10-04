@@ -314,3 +314,15 @@
     transform: rotate(360deg); /* Final state */
   }
 }
+
+#message {
+  background-color: white; /* Background color for the message */
+  color: black; /* Text color */
+  padding: 10px; /* Padding around the message */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 10px; /* Space above the message */
+  width: fit-content; /* Adjust width to fit content */
+  min-width: 200px; /* Minimum width */
+  height: auto; /* Automatic height based on content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
