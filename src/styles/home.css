@@ -316,6 +316,7 @@
 }
 
 #message {
+  display: none;
   background-color: white; /* Background color for the message */
   color: black; /* Text color */
   padding: 10px; /* Padding around the message */
