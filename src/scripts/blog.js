@@ -37,7 +37,7 @@ const renderCard = (posts, isFiltered) => {
             </div>
             <div class="box-content">
               <h4>${post.title}</h4>
-              <p>${post.text}</p>
+              <p>${post.description}</p>
               <button onclick="window.location.href='${
                 post.link ? post.link : "../pages/custom-software.html"
               }'" class="readmore">Read more</button>
