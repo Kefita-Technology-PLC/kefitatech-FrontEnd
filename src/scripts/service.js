@@ -1,16 +1,3 @@
-// Get the current page URL
-const currentPage = window.location.pathname.split("/").pop();
-
-// Get all navigation links
-const navLinks = document.querySelectorAll(".navlist a");
-
-// Loop through each link
-navLinks.forEach((link) => {
-  // Check if the link's href matches the current page
-  if (link.getAttribute("href") === currentPage) {
-    link.classList.add("active");
-  }
-});
 const showMoreButton = document.querySelector(".show-more");
 const itemsContainer = document.querySelector(".items");
 const items = document.querySelectorAll(".box");
@@ -32,10 +19,19 @@ function expandService() {
     showMoreButton.style.display = "none";
   }
 }
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
 
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navlist.classList.toggle("open");
-};
+// Get the current page URL
+const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+
+// Get all navigation links
+const navLinks = document.querySelectorAll(".navlist a");
+
+// Loop through each link and check for active page
+navLinks.forEach((link) => {
+  const linkPage = link.getAttribute("href").split("/").pop().toLowerCase();
+
+  // Check if the link's href matches the current page and apply 'active' class
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
